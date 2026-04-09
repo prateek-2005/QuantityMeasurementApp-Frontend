@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Quantity Measurement App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/auth.css"/>
+</head>
+<body>
+
+<div class="auth-root">
+
+  <!-- ═══ LEFT BRAND PANEL ═══ -->
+  <div class="brand-panel">
+    <div class="brand-glow"></div>
+    <div class="brand-inner">
+
+      <div class="brand-logo">
+        <div class="brand-logo-icon">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="10" fill="white" fill-opacity="0.15"/>
+            <path d="M7 16h18M7 10h10M7 22h14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="25" cy="10" r="3" fill="white" fill-opacity="0.8"/>
+          </svg>
+        </div>
+        <span>MetricFlow</span>
+      </div>
+
+      <div class="brand-hero">
+        <!-- Animated SVG illustration -->
+        <svg viewBox="0 0 300 280" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+          <!-- glow blobs -->
+          <ellipse cx="150" cy="140" rx="120" ry="100" fill="white" fill-opacity="0.04"/>
+          <!-- Balance scale -->
+          <line x1="150" y1="44" x2="150" y2="74" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.9"/>
+          <circle cx="150" cy="40" r="6" fill="white" fill-opacity="0.7"/>
+          <rect x="106" y="72" width="88" height="7" rx="3.5" fill="white" fill-opacity="0.85"/>
+          <!-- left arm -->
+          <line x1="114" y1="79" x2="90" y2="108" stroke="white" stroke-width="1.8" stroke-opacity="0.7"/>
+          <line x1="90" y1="108" x2="68" y2="108" stroke="white" stroke-width="1.8" stroke-opacity="0.7"/>
+          <line x1="68" y1="108" x2="44" y2="79" stroke="white" stroke-width="1.8" stroke-opacity="0.7"/>
+          <ellipse cx="79" cy="116" rx="28" ry="9" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.5" stroke-width="1.5"/>
+          <rect x="68" y="102" width="22" height="14" rx="4" fill="white" fill-opacity="0.55"/>
+          <!-- right arm -->
+          <line x1="186" y1="79" x2="210" y2="100" stroke="white" stroke-width="1.8" stroke-opacity="0.7"/>
+          <line x1="210" y1="100" x2="232" y2="100" stroke="white" stroke-width="1.8" stroke-opacity="0.7"/>
+          <line x1="232" y1="100" x2="256" y2="79" stroke="white" stroke-width="1.8" stroke-opacity="0.7"/>
+          <ellipse cx="221" cy="108" rx="28" ry="9" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.5" stroke-width="1.5"/>
+          <rect x="212" y="94" width="18" height="14" rx="4" fill="white" fill-opacity="0.35"/>
+          <rect x="218" y="100" width="8" height="8" rx="2" fill="white" fill-opacity="0.45"/>
+          <!-- Ruler -->
+          <rect x="44" y="148" width="212" height="40" rx="7" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.3" stroke-width="1.5"/>
+          <!-- ruler ticks -->
+          <line x1="68" y1="148" x2="68" y2="138" stroke="white" stroke-opacity="0.7" stroke-width="1.8"/>
+          <line x1="102" y1="148" x2="102" y2="142" stroke="white" stroke-opacity="0.5" stroke-width="1.4"/>
+          <line x1="136" y1="148" x2="136" y2="138" stroke="white" stroke-opacity="0.7" stroke-width="1.8"/>
+          <line x1="170" y1="148" x2="170" y2="142" stroke="white" stroke-opacity="0.5" stroke-width="1.4"/>
+          <line x1="204" y1="148" x2="204" y2="138" stroke="white" stroke-opacity="0.7" stroke-width="1.8"/>
+          <line x1="238" y1="148" x2="238" y2="142" stroke="white" stroke-opacity="0.5" stroke-width="1.4"/>
+          <text x="68" y="134" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="10" font-family="Inter" font-weight="600">1</text>
+          <text x="136" y="134" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="10" font-family="Inter" font-weight="600">2</text>
+          <text x="204" y="134" text-anchor="middle" fill="white" fill-opacity="0.7" font-size="10" font-family="Inter" font-weight="600">3</text>
+          <!-- ruler labels -->
+          <text x="79" y="173" text-anchor="middle" fill="white" fill-opacity="0.55" font-size="9" font-family="Inter">cm</text>
+          <text x="119" y="173" text-anchor="middle" fill="white" fill-opacity="0.55" font-size="9" font-family="Inter">inch</text>
+          <text x="162" y="173" text-anchor="middle" fill="white" fill-opacity="0.55" font-size="9" font-family="Inter">feet</text>
+          <text x="210" y="173" text-anchor="middle" fill="white" fill-opacity="0.55" font-size="9" font-family="Inter">yard</text>
+          <!-- Thermometer -->
+          <rect x="140" y="200" width="20" height="52" rx="10" fill="white" fill-opacity="0.12" stroke="white" stroke-opacity="0.35" stroke-width="1.5"/>
+          <rect x="144" y="214" width="12" height="32" rx="6" fill="white" fill-opacity="0.3"/>
+          <circle cx="150" cy="248" r="10" fill="white" fill-opacity="0.45" stroke="white" stroke-opacity="0.5" stroke-width="1.5"/>
+          <line x1="162" y1="206" x2="167" y2="206" stroke="white" stroke-opacity="0.6" stroke-width="1.5"/>
+          <line x1="162" y1="216" x2="165" y2="216" stroke="white" stroke-opacity="0.45" stroke-width="1.2"/>
+          <line x1="162" y1="226" x2="167" y2="226" stroke="white" stroke-opacity="0.6" stroke-width="1.5"/>
+          <line x1="162" y1="236" x2="165" y2="236" stroke="white" stroke-opacity="0.45" stroke-width="1.2"/>
+        </svg>
+      </div>
+
+      <h1 class="brand-title">Quantity Measurement App</h1>
+      <p class="brand-tagline">Convert · Compare · Calculate · Analyse</p>
+
+      <div class="brand-chips">
+        <span>📏 Length</span>
+        <span>⚖️ Weight</span>
+        <span>🌡️ Temperature</span>
+        <span>💧 Volume</span>
+      </div>
+
+      <div class="brand-footer-note">
+        Precision Measurement  &nbsp;·&nbsp; Made Simple
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ RIGHT FORM PANEL ═══ -->
+  <div class="form-panel">
+    <div class="form-card">
+
+      <!-- Tab bar -->
+      <div class="tab-bar">
+        <button class="tab" id="tab-login"  onclick="showTab('login')">LOGIN</button>
+        <button class="tab active" id="tab-signup" onclick="showTab('signup')">SIGNUP</button>
+      </div>
+
+      <!-- Alert -->
+      <div class="alert" id="alert" style="display:none"></div>
+
+      <!-- ── LOGIN ── -->
+      <form id="f-login" class="aform" style="display:none" onsubmit="doLogin(event)">
+        <div class="fgroup">
+          <label>Username</label>
+          <input id="l-user" type="text" placeholder="Enter your username" autocomplete="username" required/>
+        </div>
+        <div class="fgroup">
+          <label>Password</label>
+          <div class="pw-wrap">
+            <input id="l-pass" type="password" placeholder="Enter your password" autocomplete="current-password" required/>
+            <button type="button" class="eye" onclick="togglePw('l-pass',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <button class="abtn" id="btn-login" type="submit">
+          <span class="bl">Login</span><span class="bs" style="display:none"></span>
+        </button>
+        <p class="switcher">No account? <span onclick="showTab('signup')">Sign up</span></p>
+      </form>
+
+      <!-- ── SIGNUP ── -->
+      <form id="f-signup" class="aform" onsubmit="doSignup(event)">
+        <div class="fgroup">
+          <label>Full Name</label>
+          <input id="s-name" type="text" placeholder="Enter your full name"/>
+        </div>
+        <div class="fgroup">
+          <label>Email Id</label>
+          <input id="s-user" type="text" placeholder="Enter your email / username" autocomplete="username" required/>
+        </div>
+        <div class="fgroup">
+          <label>Password</label>
+          <div class="pw-wrap">
+            <input id="s-pass" type="password" placeholder="Create a password" autocomplete="new-password" required/>
+            <button type="button" class="eye" onclick="togglePw('s-pass',this)"><svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg></button>
+          </div>
+        </div>
+        <div class="fgroup">
+          <label>Mobile Number</label>
+          <input id="s-mob" type="tel" placeholder="Enter your mobile number"/>
+        </div>
+        <button class="abtn" id="btn-signup" type="submit">
+          <span class="bl">Signup</span><span class="bs" style="display:none"></span>
+        </button>
+        <p class="switcher">Have an account? <span onclick="showTab('login')">Login</span></p>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
