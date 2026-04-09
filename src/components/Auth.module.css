@@ -1,0 +1,95 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* LEFT BRAND */
+.brand {
+  width: 42%;
+  background: linear-gradient(145deg, #b52b3e, #9B2335, #6b1522);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px;
+  color: #fff;
+}
+.logo {
+  width: 52px; height: 52px;
+  background: rgba(255,255,255,.15);
+  border-radius: 14px;
+  display: grid; place-items: center;
+}
+.brand h1 { font-size: 26px; font-weight: 800; }
+.brand p  { font-size: 14px; opacity: .75; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+.chips span {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  padding: 5px 12px; border-radius: 999px;
+  font-size: 12px; font-weight: 500;
+}
+
+/* RIGHT FORM */
+.formWrap {
+  flex: 1;
+  display: flex; align-items: center; justify-content: center;
+  padding: 32px;
+}
+.card {
+  width: 100%; max-width: 400px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px;
+}
+.card h2 { font-size: 22px; font-weight: 800; color: #1e293b; }
+.card > p { font-size: 13px; color: #94a3b8; margin-top: 4px; margin-bottom: 24px; }
+
+.alert {
+  background: #fef2f2; border: 1px solid #fecaca;
+  color: #dc2626; border-radius: 8px;
+  padding: 10px 14px; font-size: 13px; margin-bottom: 16px;
+}
+
+.field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+.field label { font-size: 13px; font-weight: 600; color: #374151; }
+.field input {
+  padding: 10px 12px;
+  border: 1.5px solid #e2e8f0; border-radius: 8px;
+  font-size: 14px; color: #1e293b; background: #f8fafc;
+  outline: none; transition: border-color .15s;
+  font-family: inherit;
+}
+.field input:focus { border-color: #6366f1; background: #fff; }
+.field input::placeholder { color: #cbd5e1; }
+
+.btn {
+  width: 100%; padding: 12px;
+  background: #9B2335; color: #fff;
+  border: none; border-radius: 9px;
+  font-size: 15px; font-weight: 700;
+  cursor: pointer; margin-top: 4px;
+  transition: background .15s, opacity .15s;
+  display: flex; align-items: center; justify-content: center;
+  font-family: inherit;
+}
+.btn:hover:not(:disabled) { background: #7a1a28; }
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+
+.spin {
+  width: 18px; height: 18px;
+  border: 2px solid rgba(255,255,255,.4); border-top-color: #fff;
+  border-radius: 50%; animation: spin .7s linear infinite; display: inline-block;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.switch { font-size: 13px; color: #64748b; text-align: center; margin-top: 20px; }
+.switch a { color: #9B2335; font-weight: 600; text-decoration: none; }
+.switch a:hover { text-decoration: underline; }
+
+@media (max-width: 700px) {
+  .brand { display: none; }
+  .card { padding: 24px; }
+}
